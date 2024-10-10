@@ -5,7 +5,7 @@ require "roku_builder_pr/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "roku_builder_pr"
-  spec.version       = RokuBuilderLazyDebug::VERSION
+  spec.version       = RokuBuilderPR::VERSION
   spec.authors       = ["Charles Greene"]
   spec.email         = ["charles.greene@redspace.com"]
 
@@ -19,6 +19,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "roku_builder", "~> 4.4"
+  spec.add_dependency "jira-ruby"
+  spec.add_dependency "cli-ui"
+  spec.add_dependency "git"
 
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
