@@ -126,7 +126,7 @@ module RokuBuilder
         CLI::UI::StdoutRouter.enable
         return CLI::UI.ask("What branch type do you want to use?", options: potential_types.map{|s| s.to_s})
       elsif potential_types.count == 1
-        return potential_types.first
+        return potential_types.first.to_s
       else
         CLI::UI::StdoutRouter.enable
         return CLI::UI.ask("Enter branch type:")
